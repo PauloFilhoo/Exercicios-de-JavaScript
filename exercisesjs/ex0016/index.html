@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Início:
+                <input type="number" name="init" id="inicio">
+            </p>
+            <p>Fim:
+                <input type="number" name="end" id="final">
+            </p>
+            <p>Passo:
+                <input type="number" name="passo" id="passo" min="1">
+            </p>
+            <p>
+                <button type="button" onclick="contar()">Contar</button>
+            </p>
+        </div>
+        <div>
+            <p id="warn">Aguardando contagem...</p>
+            <p id="res"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Paulogamedevs</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
